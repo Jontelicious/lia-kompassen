@@ -1,6 +1,6 @@
 # LIA-kompassen · Studentmall
 
-En tom svensk mall för LIA-förberedelser: egna fakta och projekt, CV/materialstatus, arbetsgivarjämförelse, formuleringar, intervjuträning och ansökningsplanering. Ljust, mörkt, systemtema och Lavendel · mörkt ingår.
+En tom svensk mall för LIA-förberedelser: egna fakta och projekt, CV/materialstatus, arbetsgivarjämförelse, formuleringar, intervjuträning och ansökningsplanering. Ljust, mörkt, systemtema, Lavendel · mörkt och Lavendel · ljust ingår.
 
 **Ingen installation, AI-tjänst eller API-nyckel behövs för webbversionen.** Den enkla huvudversionen består av HTML, CSS och JavaScript utan npm, externa kodbibliotek eller byggsteg. Den är separat från den mer omfattande Lovable-versionen.
 

@@ -36,3 +36,26 @@ html[data-theme=purple]{color-scheme:dark}
 body{font-size:16px}.card p{font-size:1rem}nav button,button,.button,label,input,textarea,select,table{font-size:1rem}aside small{font-size:.875rem;letter-spacing:.06em}header span,.badge,th{font-size:.875rem}footer,dialog p{font-size:.875rem}select{appearance:none;padding-right:2.2rem;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%2381759b' stroke-width='2'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .65rem center}
 
 .card pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:1rem}.guide-command{padding:1rem;border:1px solid currentColor;border-radius:.5rem}
+
+/* Light lavender: soft surfaces, plum text and distinct semantic statuses. */
+html[data-theme=lavender-light]{color-scheme:light}
+[data-theme=lavender-light] body{background:#f4effa;color:#392a50}
+[data-theme=lavender-light] aside{background:#e8def5;color:#392a50}
+[data-theme=lavender-light] aside small,[data-theme=lavender-light] aside p{color:#655572}
+[data-theme=lavender-light] .card,[data-theme=lavender-light] .tablewrap,[data-theme=lavender-light] dialog{background:#fcfaff;color:#392a50;border-color:#bba9cd}
+[data-theme=lavender-light] .muted,[data-theme=lavender-light] small,[data-theme=lavender-light] footer{color:#655572}
+[data-theme=lavender-light] .hero,[data-theme=lavender-light] .empty,[data-theme=lavender-light] th{background:#e9dff4;color:#392a50;border-color:#bba9cd}
+[data-theme=lavender-light] header,[data-theme=lavender-light] footer,[data-theme=lavender-light] td,[data-theme=lavender-light] th{border-color:#bba9cd}
+[data-theme=lavender-light] button,[data-theme=lavender-light] .button,[data-theme=lavender-light] input,[data-theme=lavender-light] textarea,[data-theme=lavender-light] select{background-color:#fffaff;color:#392a50;border-color:#9b85af}
+[data-theme=lavender-light] button:hover,[data-theme=lavender-light] .button:hover{background-color:#e9dcf6}
+[data-theme=lavender-light] .primary{background:#7651a7;color:#fff}
+[data-theme=lavender-light] .primary:hover{background:#63428f;color:#fff}
+[data-theme=lavender-light] a{color:#68438f}
+[data-theme=lavender-light] nav button{background:transparent;color:#49365f;border-color:transparent}
+[data-theme=lavender-light] nav button:hover{background:#ded0ef}
+[data-theme=lavender-light] nav .active,[data-theme=lavender-light] nav .active:hover{background:#d8c3ef;color:#392a50}
+[data-theme=lavender-light] .badge,[data-theme=lavender-light] header>span{background:#f5e8c9;color:#705015}
+[data-theme=lavender-light] .badge.good{background:#dcecdf;color:#285638}
+[data-theme=lavender-light] .step{border-color:#9771be}
+[data-theme=lavender-light] :focus-visible{outline-color:#7651a7}
+[data-theme=lavender-light] dialog::backdrop{background:#392a5066}

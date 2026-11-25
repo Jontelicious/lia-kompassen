@@ -1,0 +1,111 @@
+# LIA-kompassen · Studentmall
+
+En tom svensk mall för LIA-förberedelser: egna fakta och projekt, CV/materialstatus, arbetsgivarjämförelse, formuleringar, intervjuträning och ansökningsplanering. Ljust, mörkt, systemtema och Lavendel · mörkt ingår.
+
+**Ingen installation, AI-tjänst eller API-nyckel behövs för webbversionen.** Den enkla huvudversionen består av HTML, CSS och JavaScript utan npm, externa kodbibliotek eller byggsteg. Den är separat från den mer omfattande Lovable-versionen.
+
+- [Testa webbversionen](https://jontelicious.github.io/lia-kompassen/)
+- [Skapa eget repo från mallen](https://github.com/Jontelicious/lia-kompassen/generate)
+- [Valfri Lovable-version: Remix](https://lovable.dev/projects/15b75fd8-8524-452a-8939-c7c54e4327df/remix)
+
+## Välj hur du vill börja
+
+| Väg | Vad behövs? | Passar dig som vill |
+| --- | --- | --- |
+| Testa webbversionen | Modern webbläsare | Prova med testuppgifter, utan konto eller nedladdning |
+| Use this template + GitHub Pages | Eget GitHub-konto | Ha ett eget repo och en egen webbadress |
+| Klona till datorn | Git; Python 3 för rekommenderad lokal server | Läsa/ändra koden och köra lokalt |
+| Download ZIP | Webbläsare; eventuell lokal server | Hämta filerna utan Git |
+| Lovable Remix | Lovable-konto | Anpassa ramverksversionen med Lovable; villkor/krediter beror på planen |
+
+Du behöver bara välja en väg. Ett mallrepo är också ett vanligt Git-repo som går att klona. En nedladdad ZIP är endast källkod, inte ett installationsprogram. Läs koden innan du kör egna ändringar.
+
+## 1 · Testa direkt
+
+Öppna webbversionen. Välj tema under **Utseende** och läs **Kom igång & AI-stöd**. Appen har inga förifyllda studentuppgifter eller bekräftade arbetsgivare. Använd syntetiska uppgifter i den gemensamma demon.
+
+Dina inmatade poster skickas inte av appkoden till ett konto, GitHub-repot eller en AI. De lagras i den aktuella webbläsaren. Detta är **inte** ett privat användarkonto eller en dokumenttjänst. Hostingplattformen hanterar webbförfrågningar enligt sina egna villkor. För arbete med egna uppgifter rekommenderas en egen kopia eller lokal körning.
+
+## 2 · Skapa ett eget repo och en egen webbversion
+
+1. Öppna [huvudrepot](https://github.com/Jontelicious/lia-kompassen).
+2. Välj **Use this template → Create a new repository**. Välj ditt eget konto och ett namn, till exempel `min-lia-kompass`.
+3. Välj **Public** om du använder GitHub Free och vill ha GitHub Pages. Publicera endast tom appkod och generella instruktioner. Lägg aldrig CV, privata dokument, personliga JSON-backuper eller nycklar i repot. Ett privat repo gör inte automatiskt en Pages-webbplats privat.
+4. Skapa repot. Öppna **Settings → Pages** i ditt nya repo.
+5. Välj **Deploy from a branch**, grenen **main**, mappen **/(root)** och **Save**. Ingen GitHub Actions-konfiguration eller npm-installation behövs från dig; GitHub sköter sin Pages-publicering.
+6. Vänta tills Pages visar **Visit site** och öppna din egen adress. Kopierade repo aktiverar inte Pages automatiskt.
+7. Fyll i dina ramar i appens **Min profil**. Skriv personliga poster i appen, inte i källkoden. Kontrollera åtkomst till dokumentlänkar separat.
+
+Din kopia får inte automatiskt senare kodändringar från huvudmallen. Exportera dina poster innan du byter adress, version eller lagringsupplägg. Vanlig `git pull` i ett klonat repo hämtar däremot kodändringar från dess konfigurerade remote; det synkar inte dina webbläsarposter.
+
+## 3 · Klona och kör på datorn
+
+Kräver Git. Python 3 används som en liten lokal webbserver; inga tredjepartspaket installeras.
+
+
+git clone https://github.com/Jontelicious/lia-kompassen.git
+cd lia-kompassen
+python3 start.py
+
+
+På Windows, använd `py -3 start.py` i den klonade mappen. På system där Python 3 heter `python`, använd `python start.py`.
+
+Öppna **http://127.0.0.1:8765/**. Stoppa med **Ctrl+C**. Servern lyssnar bara på din dator, inte på nätverket. Behåll samma adress och port för samma webbläsarlagring. Programmet ändrar inte källfilerna när du fyller i appen.
+
+Du kan även öppna `index.html` direkt. Sparande och urklipp vid `file://` varierar mellan webbläsare; använd lokal server om det inte fungerar. Flytt av mappen kan ändra vilken lagring webbläsaren använder. Om Python/Git saknas kan du använda webbversionen tills du valt att installera verktygen från deras officiella källor.
+
+För en egen utvecklingskopia med egen Git-historik: välj **Use this template** först och klona sedan URL:en till ditt nya repo. En vanlig klon av huvudmallen ger dig inte skrivrättigheter till originalet.
+
+## 4 · Hämta utan Git
+
+Välj **Code → Download ZIP** på GitHub. Packa upp filerna innan du öppnar `index.html` eller kör `start.py` enligt ovan. Ingen betald Lovable-plan behövs för GitHub-versionens källkod.
+
+## 5 · Valfri Lovable-kopia
+
+Öppna [Remix-länken](https://lovable.dev/projects/15b75fd8-8524-452a-8939-c7c54e4327df/remix), logga in och välj **Remix project**. Detta är en separat ramverksversion med fler filer och andra beroenden. Kontrollera projektåtkomst och publicerad webbplatsåtkomst var för sig. En remix är inte automatiskt ägarprivat och följer inte senare uppdateringar av originalet. AI-ändringar kan kräva Lovable-krediter. Direkt nedladdning av hela kodbasen i Lovable kräver en betald plan; GitHub-mallen ovan har inte det kravet.
+
+## Kom igång med dina egna underlag
+
+1. Fyll i **Min profil**: utbildning/klass, LIA-perioder, ort/pendling/distans, intressen och ansökningsplan. Okända skolkrav ska fortsätta stå som okända.
+2. Välj skolans LIA-information, kursplan/roadmap, senaste CV och 1–2 projekt. Bilagor laddas inte upp i appen. Registrera filnamn eller granskade länkar som källor.
+3. Kopiera [AI-instruktionen](kom-igang-ai.txt) från appens guide till den AI du väljer. Ge bara tillgång till de underlag du avser att granska. Ingen AI är nödvändig för att använda appen manuellt.
+4. Be om källregister och motsägelser först. Granska resultatet. Skilj dokumentstyrkt, användarbekräftat, dokumenterat med begränsningar, pågående, planerat och overifierat. En statusetikett är din notering, inte en oberoende kontroll av appen.
+5. Lägg in fakta/projekt, CV svenska/engelska, brev och LinkedIn/GitHub-status, arbetsgivare, formuleringar och övningar i respektive vy. Ange källa, datum, begränsningar och nästa steg. Ange egna osäkra perioder och distansvillkor som okända.
+6. Exportera en säkerhetskopia regelbundet. Godkänd text är inte ett godkänt utskick. Appen kontaktar ingen och skickar inga ansökningar.
+
+Kursintyg är inte automatiskt yrkescertifieringar. Studier/egna labbar är inte anställningar. Lämna inte ut lösenord, personnummer, privata referensuppgifter, bankuppgifter eller hemligt skol-/arbetsmaterial till appen eller en AI.
+
+## Lagring och säkerhetskopior
+
+- **Exportera säkerhetskopia** ger en JSON-fil med profil och alla poster. Den innehåller inte appkoden, bilagor, dokumentens innehåll eller temavalet. Förvara den privat.
+- **Importera säkerhetskopia** ersätter ALLA poster och profilen efter bekräftelse. Exportera först. Filens struktur kontrolleras innan appen ändrar data; detta är ingen faktagranskning av innehållet. Import är inte ett sätt att lägga till enstaka annonser.
+- Ingen inloggning, krypterad lagring eller synk ingår. Personer med åtkomst till samma webbläsarprofil och kod som körs från samma webbursprung kan läsa lokal lagring.
+- Rensad webbläsardata, privat läge, annan webbläsare/enhet/adress/port eller flyttad lokal fil kan ge tom/separat lagring. Exportera innan du flyttar och importera i din nya kopia.
+- Appen använder egna lagringsnycklar per webbplatssökväg för att undvika att olika repo-kopior blandas ihop. Detta är namnseparering, inte en säkerhetsgräns eller separata användarkonton.
+- Ladda aldrig upp en JSON-backup eller dina dokument till ett publikt repo. `.gitignore` är ett skyddsnät, inte en garanti. Kontrollera alltid vad du committar.
+
+## Valfri bevakning av LIA-annonser
+
+Kopiera [bevakningsprompten](lia-bevakning-ai.txt) i guiden. Ange perioder, teknikområden, ort/pendling/distans, frekvens och tidszon. AI-miljön måste faktiskt stödja webbsökning och schemalagda uppgifter. En inklistrad prompt startar ingen bevakning.
+
+Be om originalannons, datum, matchningsmotivering, okända villkor, dubblettkontroll, historik för stängda annonser samt notifieringar och felrapportering. Okänd LIA-period och generell distanspolicy är inte bekräftad LIA-matchning.
+
+**Grundmallen har ingen server eller skrivkoppling för automatisk sparning.** Lägg in fynd manuellt under Arbetsgivare. Automatisk sparning kräver separat privat lagring, en avgränsad anslutning och uttryckligt godkännande av målapp, tillåtna uppdateringar, dubblettregler och notifieringar. Lägg aldrig hemliga nycklar i frontend. Begär ett test och instruktioner för paus/avslut. Ansökningar, kontakter och publiceringar ingår inte.
+
+## Uppdatera, felsök och rapportera
+
+- Börja med testuppgifter. Testa tema + omladdning, post/profil och export/import innan riktiga uppgifter läggs in.
+- Exportera innan koduppdatering. Om appen fungerar i egen flik men inte i Lovables inbäddade förhandsvisning, använd egen flik; radera inte data som första åtgärd.
+- Rapportera webbläsare, steg, förväntat och faktiskt resultat i ett GitHub-ärende. Använd anonymiserade skärmbilder. Bifoga aldrig personlig backup, CV eller hemligheter.
+- Säkerhetskänsliga brister ska inte innehålla persondata eller hemligheter i offentliga ärenden. Dela bara en minimal, syntetisk reproduktion.
+- Mobilanpassning finns i CSS; bred mobil- och webbläsarverifiering återstår. Det här är en studentmall för test, inte en granskad dokument- eller rekryteringstjänst.
+
+## Filer och underhåll
+
+`index.html` är ingången, `style.css` styr utseendet, `app.js` vyerna, `storage.js` lagringsnycklar/import och `theme.js` temat. `guide.js` visar instruktionerna. TXT-filerna är nedladdningsbara AI-/användarguider. `start.py` är en valfri lokal server. Inga beroenden eller byggsteg krävs.
+
+Ändra generella instruktioner i README/TXT och motsvarande text i `guide.js`. Kontrollera att de stämmer överens. Personliga fakta ska fyllas i genom appen. Lovable-kopian underhålls separat; denna version är huvudmallen för enkel lokal körning.
+
+## Licens
+
+MIT, se [LICENSE](LICENSE). Du får använda, ändra och dela koden enligt licensen. Undvik att dela personuppgifter med mallen.
